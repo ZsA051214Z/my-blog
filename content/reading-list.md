@@ -1,6 +1,6 @@
 ---
 title: 我的 2026 上半年阅读清单
-date: 2026-06-15
+date: 2026-06-30
 category: thoughts
 tags: [阅读, 书籍, 推荐, 学习]
 ---
