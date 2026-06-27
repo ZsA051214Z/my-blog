@@ -1,5 +1,18 @@
 [
   {
+    "file": "reading-list.md",
+    "title": "我的 2026 上半年阅读清单",
+    "date": "2026-06-30",
+    "category": "thoughts",
+    "tags": [
+      "阅读",
+      "书籍",
+      "推荐",
+      "学习"
+    ],
+    "excerpt": "我的 2026 上半年阅读清单\n\n读书是输入，写博客是输出。两者缺一不可。这里是上半年读完的一些书，做个记录和推荐。\n\n 技术类\n\n 《Designing Data-Intensive Applications》\n\nMartin Kleppmann 的经典之作。即使不写后端，理解数据系统的设计原理也对前端开发很有帮助。\n\n推荐指数： ★★★★★\n\n> 最好的技术书不是教你用什么工具，而是教你如何..."
+  },
+  {
     "file": "hello-world.md",
     "title": "Hello World - 我的第一篇博客",
     "date": "2026-06-28",
@@ -48,19 +61,6 @@
       "前端"
     ],
     "excerpt": "10 个你可能不知道的 JavaScript 技巧\n\n写了这么多年 JavaScript，有些技巧是踩了坑才学到的。今天分享 10 个实用的小技巧。\n\n 1. 用 structuredClone 深拷贝\n\njavascript\n// 再也不需要 JSON.parseJSON.stringifyobj 了\nconst original = { nested: { value: 42 } };\nco..."
-  },
-  {
-    "file": "reading-list.md",
-    "title": "我的 2026 上半年阅读清单",
-    "date": "2026-06-15",
-    "category": "thoughts",
-    "tags": [
-      "阅读",
-      "书籍",
-      "推荐",
-      "学习"
-    ],
-    "excerpt": "我的 2026 上半年阅读清单\n\n读书是输入，写博客是输出。两者缺一不可。这里是上半年读完的一些书，做个记录和推荐。\n\n 技术类\n\n 《Designing Data-Intensive Applications》\n\nMartin Kleppmann 的经典之作。即使不写后端，理解数据系统的设计原理也对前端开发很有帮助。\n\n推荐指数： ★★★★★\n\n> 最好的技术书不是教你用什么工具，而是教你如何..."
   },
   {
     "file": "creative-coding.md",
