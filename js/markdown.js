@@ -41,35 +41,20 @@ async function loadMarkdownFile(path) {
   return { meta, html, body };
 }
 
-// Article index - list of available markdown files
-const ARTICLE_INDEX = [
-  'hello-world.md',
-  'web-dev-trends.md',
-  'travel-notes.md',
-  'javascript-tips.md',
-  'reading-list.md',
-  'creative-coding.md',
-];
-
 async function loadAllArticles() {
+  try {
+    const res = await fetch('content/index.json');
+    if (res.ok) return await res.json();
+  } catch {}
+  // Fallback: manually scan
+  const all = ['hello-world.md','web-dev-trends.md','travel-notes.md','javascript-tips.md','reading-list.md','creative-coding.md'];
   const articles = [];
-
-  for (const file of ARTICLE_INDEX) {
+  for (const file of all) {
     try {
-      const article = await loadMarkdownFile(`content/${file}`);
-      articles.push({
-        file,
-        ...article.meta,
-        excerpt: article.body.substring(0, 200).replace(/[#*`\[\]]/g, '').trim() + '...',
-      });
-    } catch (e) {
-      console.warn(`Skipping ${file}:`, e.message);
-    }
+      const a = await loadMarkdownFile(`content/${file}`);
+      articles.push({ file, ...a.meta, excerpt: '' });
+    } catch {}
   }
-
-  // Sort by date descending
-  articles.sort((a, b) => (b.date || '').localeCompare(a.date || ''));
-
   return articles;
 }
 
