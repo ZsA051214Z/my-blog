@@ -25,8 +25,8 @@ function toggleTheme() {
   const hljsLink = document.getElementById('hljs-theme');
   if (hljsLink) {
     hljsLink.href = next === 'dark'
-      ? 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css'
-      : 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css';
+      ? 'css/github-dark.min.css'
+      : 'css/github.min.css';
   }
 }
 
