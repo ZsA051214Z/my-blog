@@ -13,7 +13,7 @@ git add -A
 git commit -m "更新博客 %date%"
 echo.
 echo [3/3] 推送到线上...
-set GIT_SSH_COMMAND=ssh -i C:\Users\ZsA\.ssh\id_rsa_github -o StrictHostKeyChecking=accept-new
+rem SSH 已在 git config 中配置，无需额外设置
 git push
 echo.
 echo ======================
