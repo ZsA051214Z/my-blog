@@ -1,16 +1,5 @@
 [
   {
-    "file": "2026.06.27.md",
-    "title": "Test0",
-    "date": "2026.06.27",
-    "category": "tech",
-    "tags": [
-      "标签1",
-      "标签2"
-    ],
-    "excerpt": "文章正文写在这里......"
-  },
-  {
     "file": "hello-world.md",
     "title": "Hello World - 我的第一篇博客",
     "date": "2026-06-27",
