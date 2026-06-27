@@ -1,0 +1,89 @@
+[
+  {
+    "file": "2026.06.27.md",
+    "title": "Test0",
+    "date": "2026.06.27",
+    "category": "tech",
+    "tags": [
+      "标签1",
+      "标签2"
+    ],
+    "excerpt": "文章正文写在这里......"
+  },
+  {
+    "file": "hello-world.md",
+    "title": "Hello World - 我的第一篇博客",
+    "date": "2026-06-27",
+    "category": "thoughts",
+    "tags": [
+      "博客",
+      "开始",
+      "随想"
+    ],
+    "excerpt": "Hello World\n\n欢迎来到我的个人博客！这是我写的第一篇文章，用来测试博客系统是否正常运行。\n\n 为什么开始写博客？\n\n在这个信息爆炸的时代，写博客似乎有些\"复古\"。但我觉得，写作是最好的思考方式之一。\n\n> 写作不是因为有话要说，而是因为有话要发现。 —— E.M. Forster\n\n 这个博客用什么搭建？\n\n这个博客完全使用纯静态技术搭建：\n\n- HTML5 - 语义化标签\n- CS..."
+  },
+  {
+    "file": "web-dev-trends.md",
+    "title": "2026 年 Web 开发趋势观察",
+    "date": "2026-06-25",
+    "category": "tech",
+    "tags": [
+      "前端",
+      "JavaScript",
+      "Web",
+      "趋势"
+    ],
+    "excerpt": "2026 年 Web 开发趋势观察\n\n时间过得真快，2026 年已经过去一半了。回顾这半年的 Web 开发领域，有几个趋势特别值得关注。\n\n 1. AI 原生开发成为主流\n\nAI 不再只是辅助工具，而是成为了开发流程的核心部分：\n\n- AI 代码补全 已经是标配，而不是可选项\n- 自然语言编程 开始在原型阶段发挥作用\n- AI 驱动的测试 能自动生成测试用例\n\njavascript\n// AI..."
+  },
+  {
+    "file": "travel-notes.md",
+    "title": "周末的西湖漫步",
+    "date": "2026-06-22",
+    "category": "life",
+    "tags": [
+      "旅行",
+      "摄影",
+      "杭州",
+      "生活"
+    ],
+    "excerpt": "周末的西湖漫步\n\n上个周末临时起意，去了趟杭州。没有计划，没有攻略，只是想在西湖边走走。\n\n 清晨的断桥\n\n早上六点到的断桥，几乎没有游客。晨雾还没散去，远山若隐若现，偶尔有一两只早起的鸟从湖面掠过。\n\n这个时候的西湖是安静的，只听得见自己的脚步声和远处寺庙的钟声。\n\n 午后的龙井村\n\n从断桥走到龙井村，一路上茶田层层叠叠。在一家路边的茶舍坐下来，点了一杯今年的明前龙井。\n\n茶舍的老板是个健谈的..."
+  },
+  {
+    "file": "javascript-tips.md",
+    "title": "10 个你可能不知道的 JavaScript 技巧",
+    "date": "2026-06-18",
+    "category": "tech",
+    "tags": [
+      "JavaScript",
+      "技巧",
+      "前端"
+    ],
+    "excerpt": "10 个你可能不知道的 JavaScript 技巧\n\n写了这么多年 JavaScript，有些技巧是踩了坑才学到的。今天分享 10 个实用的小技巧。\n\n 1. 用 structuredClone 深拷贝\n\njavascript\n// 再也不需要 JSON.parseJSON.stringifyobj 了\nconst original = { nested: { value: 42 } };\nco..."
+  },
+  {
+    "file": "reading-list.md",
+    "title": "我的 2026 上半年阅读清单",
+    "date": "2026-06-15",
+    "category": "thoughts",
+    "tags": [
+      "阅读",
+      "书籍",
+      "推荐",
+      "学习"
+    ],
+    "excerpt": "我的 2026 上半年阅读清单\n\n读书是输入，写博客是输出。两者缺一不可。这里是上半年读完的一些书，做个记录和推荐。\n\n 技术类\n\n 《Designing Data-Intensive Applications》\n\nMartin Kleppmann 的经典之作。即使不写后端，理解数据系统的设计原理也对前端开发很有帮助。\n\n推荐指数： ★★★★★\n\n> 最好的技术书不是教你用什么工具，而是教你如何..."
+  },
+  {
+    "file": "creative-coding.md",
+    "title": "用代码画画：创意编程入门",
+    "date": "2026-06-10",
+    "category": "tech",
+    "tags": [
+      "创意编程",
+      "p5.js",
+      "生成艺术",
+      "Canvas"
+    ],
+    "excerpt": "用代码画画：创意编程入门\n\n创意编程（Creative Coding）是一种用代码作为创意工具的编程方式。它不是为了构建产品，而是为了创造美。\n\n 什么是创意编程？\n\n简单来说，就是用代码生成视觉、声音或交互艺术。\n\n- 生成艺术 — 算法生成的图案\n- 数据可视化 — 让数据变得好看\n- 交互装置 — 响应用户行为的视觉\n- 动态排版 — 会动的文字\n\n 第一个例子：流动的粒子\n\n用 p5.j..."
+  }
+]

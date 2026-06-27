@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>联系 | 我的博客</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">MyBlog</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="article.html">文章</a></li>
+      <li><a href="projects.html">项目</a></li>
+      <li><a href="about.html">关于</a></li>
+      <li><a href="contact.html" class="active">联系</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:1rem;">
+      <button class="theme-toggle" id="themeToggle" aria-label="切换主题">🌙</button>
+      <button class="hamburger" id="hamburger" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="section" style="padding-top: 8rem;">
+    <div class="contact-container">
+      <div class="contact-info fade-in">
+        <h2>联系我</h2>
+        <p>
+          无论是技术交流、项目合作还是随便聊聊，都欢迎通过以下方式找到我。
+          我会在 24 小时内回复。
+        </p>
+        <div class="contact-links">
+          <a href="mailto:hello@example.com" class="contact-link">
+            <div class="icon">@</div>
+            <div>
+              <div style="font-weight:600;">邮箱</div>
+              <div style="color:var(--text-secondary);font-size:0.9rem;">hello@example.com</div>
+            </div>
+          </a>
+          <a href="#" class="contact-link">
+            <div class="icon">GH</div>
+            <div>
+              <div style="font-weight:600;">GitHub</div>
+              <div style="color:var(--text-secondary);font-size:0.9rem;">github.com/zsa</div>
+            </div>
+          </a>
+          <a href="#" class="contact-link">
+            <div class="icon">TW</div>
+            <div>
+              <div style="font-weight:600;">Twitter</div>
+              <div style="color:var(--text-secondary);font-size:0.9rem;">@zsa_dev</div>
+            </div>
+          </a>
+          <a href="#" class="contact-link">
+            <div class="icon">WX</div>
+            <div>
+              <div style="font-weight:600;">微信</div>
+              <div style="color:var(--text-secondary);font-size:0.9rem;">zsa_dev</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="fade-in">
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="name">姓名</label>
+            <input type="text" id="name" placeholder="你的名字" required>
+          </div>
+          <div class="form-group">
+            <label for="email">邮箱</label>
+            <input type="email" id="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">主题</label>
+            <input type="text" id="subject" placeholder="关于什么？">
+          </div>
+          <div class="form-group">
+            <label for="message">留言</label>
+            <textarea id="message" placeholder="想说些什么..." required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">发送消息</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2026 MyBlog. Built with passion.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="回到顶部">↑</button>
+  <script src="js/main.js"></script>
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('.btn-submit');
+      btn.textContent = '发送中...';
+      btn.disabled = true;
+      setTimeout(() => {
+        btn.textContent = '已发送 ✓';
+        btn.style.background = '#34c759';
+        e.target.reset();
+        setTimeout(() => {
+          btn.textContent = '发送消息';
+          btn.style.background = '';
+          btn.disabled = false;
+        }, 2000);
+      }, 1000);
+    }
+  </script>
+</body>
+</html>
