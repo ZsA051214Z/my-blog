@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于我 | 我的博客</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">MyBlog</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="article.html">文章</a></li>
+      <li><a href="projects.html">项目</a></li>
+      <li><a href="about.html" class="active">关于</a></li>
+      <li><a href="contact.html">联系</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:1rem;">
+      <button class="theme-toggle" id="themeToggle" aria-label="切换主题">🌙</button>
+      <button class="hamburger" id="hamburger" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- About Hero -->
+  <div class="about-hero">
+    <div class="about-avatar">Z</div>
+    <div class="about-text">
+      <h1>你好，我是 ZsA</h1>
+      <p class="subtitle">开发者 / 写作者 / 终身学习者</p>
+      <p>
+        热爱技术，也热爱生活。在这里我记录编程中的思考、生活中的灵感，以及一切让我觉得有趣的事物。
+        相信代码可以改变世界，文字可以温暖人心。
+      </p>
+    </div>
+  </div>
+
+  <!-- Skills -->
+  <section class="about-section fade-in">
+    <h2>技能栈</h2>
+    <div class="skill-bars">
+      <div class="skill-item">
+        <span class="skill-name">JavaScript</span>
+        <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+      </div>
+      <div class="skill-item">
+        <span class="skill-name">HTML / CSS</span>
+        <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
+      </div>
+      <div class="skill-item">
+        <span class="skill-name">React</span>
+        <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+      </div>
+      <div class="skill-item">
+        <span class="skill-name">Node.js</span>
+        <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+      </div>
+      <div class="skill-item">
+        <span class="skill-name">Python</span>
+        <div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div>
+      </div>
+      <div class="skill-item">
+        <span class="skill-name">写作</span>
+        <div class="skill-bar"><div class="skill-fill" style="width: 88%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section class="about-section fade-in">
+    <h2>经历</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <span class="date">2026 - 至今</span>
+        <h3>独立开发者</h3>
+        <p>专注于全栈开发与技术写作，探索 AI 与创意编程的交叉领域。</p>
+      </div>
+      <div class="timeline-item">
+        <span class="date">2024 - 2026</span>
+        <h3>前端工程师</h3>
+        <p>负责大型 Web 应用的架构设计与性能优化，推动组件化开发流程。</p>
+      </div>
+      <div class="timeline-item">
+        <span class="date">2022 - 2024</span>
+        <h3>计算机科学学士</h3>
+        <p>系统学习计算机基础，参与多个开源项目，获得编程竞赛奖项。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fun Facts -->
+  <section class="about-section fade-in">
+    <h2>关于我</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;margin-top:1.5rem;">
+      <div style="background:var(--bg-secondary);padding:1.5rem;border-radius:12px;text-align:center;">
+        <div style="font-size:2rem;font-weight:800;color:var(--accent);">50+</div>
+        <div style="color:var(--text-secondary);margin-top:0.3rem;">技术文章</div>
+      </div>
+      <div style="background:var(--bg-secondary);padding:1.5rem;border-radius:12px;text-align:center;">
+        <div style="font-size:2rem;font-weight:800;color:var(--accent);">10+</div>
+        <div style="color:var(--text-secondary);margin-top:0.3rem;">开源项目</div>
+      </div>
+      <div style="background:var(--bg-secondary);padding:1.5rem;border-radius:12px;text-align:center;">
+        <div style="font-size:2rem;font-weight:800;color:var(--accent);">1000+</div>
+        <div style="color:var(--text-secondary);margin-top:0.3rem;">杯咖啡</div>
+      </div>
+      <div style="background:var(--bg-secondary);padding:1.5rem;border-radius:12px;text-align:center;">
+        <div style="font-size:2rem;font-weight:800;color:var(--accent);">∞</div>
+        <div style="color:var(--text-secondary);margin-top:0.3rem;">好奇心</div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2026 MyBlog. Built with passion.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="回到顶部">↑</button>
+  <script src="js/main.js"></script>
+</body>
+</html>

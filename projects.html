@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>项目 | 我的博客</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">MyBlog</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="article.html">文章</a></li>
+      <li><a href="projects.html" class="active">项目</a></li>
+      <li><a href="about.html">关于</a></li>
+      <li><a href="contact.html">联系</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:1rem;">
+      <button class="theme-toggle" id="themeToggle" aria-label="切换主题">🌙</button>
+      <button class="hamburger" id="hamburger" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="section" style="padding-top: 8rem;">
+    <h2 class="section-title fade-in">项目展示</h2>
+    <p class="section-subtitle fade-in">我参与或独立开发的一些项目</p>
+
+    <div class="projects-grid">
+      <div class="project-card fade-in">
+        <div class="project-preview">🚀</div>
+        <div class="project-info">
+          <h3>AI 聊天助手</h3>
+          <p>基于大语言模型的智能对话应用，支持多轮对话、上下文记忆和插件扩展。</p>
+          <div class="project-tech">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">OpenAI API</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-primary">在线演示</a>
+            <a href="#" class="btn-outline">源代码</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="project-preview">🎨</div>
+        <div class="project-info">
+          <h3>生成艺术工具</h3>
+          <p>使用 p5.js 创建的交互式生成艺术平台，支持参数调节和随机种子。</p>
+          <div class="project-tech">
+            <span class="tag">p5.js</span>
+            <span class="tag">Canvas</span>
+            <span class="tag">WebGL</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-primary">在线演示</a>
+            <a href="#" class="btn-outline">源代码</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="project-preview">📊</div>
+        <div class="project-info">
+          <h3>数据可视化面板</h3>
+          <p>实时数据可视化仪表盘，支持多种图表类型和自定义数据源接入。</p>
+          <div class="project-tech">
+            <span class="tag">D3.js</span>
+            <span class="tag">WebSocket</span>
+            <span class="tag">SVG</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-primary">在线演示</a>
+            <a href="#" class="btn-outline">源代码</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="project-preview">📝</div>
+        <div class="project-info">
+          <h3>Markdown 编辑器</h3>
+          <p>所见即所得的 Markdown 编辑器，支持实时预览、代码高亮和导出功能。</p>
+          <div class="project-tech">
+            <span class="tag">Vue.js</span>
+            <span class="tag">Marked.js</span>
+            <span class="tag">CodeMirror</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-primary">在线演示</a>
+            <a href="#" class="btn-outline">源代码</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="project-preview">🎮</div>
+        <div class="project-info">
+          <h3>2D 像素游戏</h3>
+          <p>复古风格的 2D 平台跳跃游戏，使用纯 JavaScript 和 Canvas 构建。</p>
+          <div class="project-tech">
+            <span class="tag">JavaScript</span>
+            <span class="tag">Canvas</span>
+            <span class="tag">Game Dev</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-primary">在线演示</a>
+            <a href="#" class="btn-outline">源代码</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="project-preview">🔗</div>
+        <div class="project-info">
+          <h3>短链接服务</h3>
+          <p>高性能短链接生成与跳转服务，支持自定义别名和访问统计。</p>
+          <div class="project-tech">
+            <span class="tag">Go</span>
+            <span class="tag">Redis</span>
+            <span class="tag">PostgreSQL</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-primary">在线演示</a>
+            <a href="#" class="btn-outline">源代码</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2026 MyBlog. Built with passion.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="回到顶部">↑</button>
+  <script src="js/main.js"></script>
+</body>
+</html>

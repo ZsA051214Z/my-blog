@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文章 | 我的博客</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" id="hljs-theme">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">MyBlog</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="article.html" class="active">文章</a></li>
+      <li><a href="projects.html">项目</a></li>
+      <li><a href="about.html">关于</a></li>
+      <li><a href="contact.html">联系</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:1rem;">
+      <button class="theme-toggle" id="themeToggle" aria-label="切换主题">🌙</button>
+      <button class="hamburger" id="hamburger" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Article Hero -->
+  <div class="article-hero" id="articleHero">
+    <div class="article-hero-bg"></div>
+    <div class="article-hero-overlay"></div>
+    <div class="article-hero-content" id="articleHeroContent">
+      <h1 id="articleTitle">加载中...</h1>
+      <div class="article-hero-meta">
+        <span id="articleDate"></span>
+        <span id="articleCategory"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Article Content -->
+  <article class="markdown-body" id="articleContent">
+    <div class="loading">
+      <div class="spinner"></div>
+      <p>加载文章中...</p>
+    </div>
+  </article>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="回到顶部">↑</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="js/markdown.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      const params = new URLSearchParams(window.location.search);
+      const file = params.get('file');
+      if (!file) {
+        document.getElementById('articleContent').innerHTML = '<div class="loading"><p>未指定文章，请从首页选择一篇文章阅读。</p></div>';
+        document.getElementById('articleTitle').textContent = '文章未找到';
+        return;
+      }
+      try {
+        const article = await loadMarkdownFile(`content/${file}`);
+        document.getElementById('articleTitle').textContent = article.meta.title;
+        document.getElementById('articleDate').textContent = article.meta.date;
+        document.getElementById('articleCategory').textContent = article.meta.category;
+        document.getElementById('articleContent').innerHTML = article.html;
+        document.title = `${article.meta.title} | 我的博客`;
+        document.querySelectorAll('.markdown-body pre code').forEach(block => {
+          hljs.highlightElement(block);
+        });
+      } catch (e) {
+        document.getElementById('articleContent').innerHTML = '<div class="loading"><p>文章加载失败，请稍后重试。</p></div>';
+        document.getElementById('articleTitle').textContent = '加载失败';
+      }
+    });
+  </script>
+</body>
+</html>

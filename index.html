@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的博客 | 技术与生活的交汇</title>
+  <meta name="description" content="一个关于技术、生活与思考的个人博客">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" id="hljs-theme">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">MyBlog</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">首页</a></li>
+      <li><a href="article.html">文章</a></li>
+      <li><a href="projects.html">项目</a></li>
+      <li><a href="about.html">关于</a></li>
+      <li><a href="contact.html">联系</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:1rem;">
+      <button class="theme-toggle" id="themeToggle" aria-label="切换主题">🌙</button>
+      <button class="hamburger" id="hamburger" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <canvas id="particle-canvas"></canvas>
+    <div class="hero-content">
+      <h1>探索 · 创造 · 分享</h1>
+      <p>在这里记录技术心得、生活感悟与一切有趣的发现</p>
+      <a href="#articles" class="hero-cta">开始阅读</a>
+    </div>
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- Featured Articles -->
+  <section class="section" id="articles">
+    <h2 class="section-title fade-in">最新文章</h2>
+    <p class="section-subtitle fade-in">精选内容，与你分享</p>
+
+    <div class="filter-bar fade-in">
+      <button class="filter-btn active" data-filter="all">全部</button>
+      <button class="filter-btn" data-filter="tech">技术</button>
+      <button class="filter-btn" data-filter="life">生活</button>
+      <button class="filter-btn" data-filter="thoughts">随想</button>
+    </div>
+
+    <div class="articles-grid" id="articlesGrid">
+      <!-- Articles loaded dynamically -->
+      <div class="loading">
+        <div class="spinner"></div>
+        <p>加载中...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="#" aria-label="GitHub">GH</a>
+        <a href="#" aria-label="Twitter">TW</a>
+        <a href="#" aria-label="Email">@</a>
+        <a href="#" aria-label="RSS">RS</a>
+      </div>
+      <p>&copy; 2026 MyBlog. Built with passion.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="回到顶部">↑</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/markdown.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
