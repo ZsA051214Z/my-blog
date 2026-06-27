@@ -64,8 +64,8 @@ function renderArticleCard(article, featured = false) {
   const categoryLabel = categoryMap[article.category] || article.category || '未分类';
 
   return `
-    <a href="article.html?file=${article.file}" class="article-card-link" data-category="${article.category || ''}">
-    <div class="article-card ${featured ? 'featured' : ''}">
+    <a href="article.html?file=${article.file}" class="article-card-link${featured ? ' featured' : ''}" data-category="${article.category || ''}">
+    <div class="article-card">
       <div class="card-image"></div>
       <div class="card-body">
         <div class="card-meta">
