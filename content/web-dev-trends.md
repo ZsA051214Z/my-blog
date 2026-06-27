@@ -1,6 +1,6 @@
 ---
 title: 2026 年 Web 开发趋势观察
-date: 2026-06-25
+date: 2026-06-27
 category: tech
 tags: [前端, JavaScript, Web, 趋势]
 ---
