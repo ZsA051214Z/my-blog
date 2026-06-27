@@ -1,6 +1,6 @@
 ---
 title: Hello World - 我的第一篇博客
-date: 2026-06-27
+date: 2026-06-28
 category: thoughts
 tags: [博客, 开始, 随想]
 ---
