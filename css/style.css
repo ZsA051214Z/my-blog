@@ -298,10 +298,21 @@ img {
 }
 
 /* ===== Article Cards ===== */
+.article-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 .articles-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+}
+
+.article-card-link.featured {
+  grid-column: span 2;
+  grid-row: span 2;
 }
 
 .article-card {
@@ -311,16 +322,12 @@ img {
   box-shadow: 0 2px 12px var(--shadow);
   transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
+  height: 100%;
 }
 
 .article-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 40px var(--shadow);
-}
-
-.article-card.featured {
-  grid-column: span 2;
-  grid-row: span 2;
 }
 
 .article-card .card-image {

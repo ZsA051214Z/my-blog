@@ -88,9 +88,10 @@ function initFilter() {
       btn.classList.add('active');
 
       const filter = btn.dataset.filter;
-      document.querySelectorAll('.article-card').forEach(card => {
-        if (filter === 'all' || card.dataset.category === filter) {
-          card.style.display = '';
+      document.querySelectorAll('.article-card-link').forEach(link => {
+        const card = link.querySelector('.article-card');
+        if (filter === 'all' || link.dataset.category === filter) {
+          link.style.display = '';
           // Re-trigger animation
           card.style.opacity = '0';
           card.style.transform = 'translateY(20px)';
@@ -100,7 +101,7 @@ function initFilter() {
             card.style.transform = 'translateY(0)';
           });
         } else {
-          card.style.display = 'none';
+          link.style.display = 'none';
         }
       });
     });
